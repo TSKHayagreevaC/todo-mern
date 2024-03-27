@@ -9,6 +9,7 @@ import { Button } from '@mui/material';
 
 function App() {
   const [cards, setCards] = useState([]);
+  const [todos, setTodos] = useState([]);
 
   const deletItem = (card) => {
     const filtered = cards.filter(ele => ele === card)
@@ -19,8 +20,15 @@ function App() {
     setCards([...cards]);
   };
 
+  function getTodosFromDb () {
+    const todos = getTodos();
+    console.log('getTodos :: ', getTodos);
+    this.setState({todos: todos});
+  }
+
   useEffect(() => {
-    // getTodos();
+    // Uncomment following lines to fetch todos from DB
+    // getTodosFromDb()
   }, [])
 
   return (
