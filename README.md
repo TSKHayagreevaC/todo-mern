@@ -4,7 +4,7 @@
 
 ## run command `npm install`
 
-# Getting Started with Clent Side
+# Getting Started with Client Side
 
 ## run command `cd client`
 
